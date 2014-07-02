@@ -1,0 +1,22 @@
+{
+  // Required
+  "manifest_version": 2,
+  "name": "Haaretz overlay blocker",
+  "version": "1",
+
+  // Recommended
+
+  "description": "חוסם את הבקשה למנוי באתר הארץ.",
+
+  // Optional
+  "author": "רועי מאירוביץ",
+  
+  "content_scripts": [{
+          "matches": ["http://*.haaretz.co.il/*"],
+        "css": ["css.css"]
+  }],
+  
+  "permissions": [
+    "tabs", "http://*.haaretz.co.il/*"
+  ]
+}
